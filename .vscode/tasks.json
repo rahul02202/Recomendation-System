@@ -1,0 +1,19 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build with Maven",
+            "type": "shell",
+            "command": "mvn compile",
+            "group": "build",
+            "problemMatcher": []
+        },
+        {
+            "label": "Run Recommendation System",
+            "type": "shell",
+            "command": "mvn exec:java -Dexec.mainClass=RecommendationSystem",
+            "group": "test",
+            "problemMatcher": []
+        }
+    ]
+}
